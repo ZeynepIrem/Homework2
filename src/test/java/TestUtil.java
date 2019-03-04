@@ -31,5 +31,18 @@ public class TestUtil {
 	assertFalse( c.compute(arr) );}
 
 
+  // if (i == 0) 
+  //    throw new RuntimeException();
+  @Test
+  public void test3() { 
+	int arr[] = {1,0,6};
+	try {
+   	 c.compute(arr);
+     fail("The test should have failed"); }
+    catch (RuntimeException e) {
+     assertTrue("Sanity check", true);    }
+	}
+
+
 
 }
