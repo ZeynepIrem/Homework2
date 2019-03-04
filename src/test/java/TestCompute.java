@@ -38,5 +38,23 @@ public class TestCompute {
   }
 
 
+  //if (sum % i == 0) 
+  //    return true;
+  @Test
+  public void test4() {
+	int arr2[] = {2,3,1};
+  	assertTrue(c.compute(arr2));
+   }
+
+
+
+
+  //return false
+  @Test
+  public void test5(){
+	int arr3[] = {3,6,2};
+	assertFalse(c.compute(arr3));
+}
+
 
 }
