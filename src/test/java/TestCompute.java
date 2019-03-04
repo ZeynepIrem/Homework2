@@ -27,6 +27,16 @@ public class TestCompute {
 	 assertEquals(-1, c.countNumberOfOccurrences("i"));
   }
 
+  // if (!mq.contains(e))
+  @Test
+  public void test2(){
+    MessageQueue mq = mock(MessageQueue.class);
+    c = new Compute(mq);
+    when(mq.size()).thenReturn(5);
+	when(mq.contains("i")).thenReturn(false);
+	assertEquals(0, c.countNumberOfOccurrences("i"));
+  }
+
 
 
 }
