@@ -24,5 +24,12 @@ public class TestUtil {
 
 
 
+  //if (args.length %2 == 0)
+  @Test
+  public void test2() { 
+	int arr[] = {1,2};
+	assertFalse( c.compute(arr) );}
+
+
 
 }
