@@ -18,5 +18,15 @@ public class TestCompute {
   }
 
 
+  // if (mq.size() == 0) 
+  @Test
+  public void test1(){
+     MessageQueue mq = mock(MessageQueue.class);
+     c = new Compute(mq);
+     when(mq.size()).thenReturn(0);
+	 assertEquals(-1, c.countNumberOfOccurrences("i"));
+  }
+
+
 
 }
