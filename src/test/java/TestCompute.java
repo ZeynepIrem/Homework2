@@ -38,23 +38,17 @@ public class TestCompute {
   }
 
 
-  //if (sum % i == 0) 
-  //    return true;
+
+  // for (int i = 0; i < mq.size(); i++) {
   @Test
-  public void test4() {
-	int arr2[] = {2,3,1};
-  	assertTrue(c.compute(arr2));
-   }
-
-
-
-
-  //return false
-  @Test
-  public void test5(){
-	int arr3[] = {3,6,2};
-	assertFalse(c.compute(arr3));
-}
+  public void test4(){
+    MessageQueue mq = mock(MessageQueue.class);
+    c = new Compute(mq);
+    when(mq.size()).thenReturn(5);
+	when(mq.contains("i")).thenReturn(true);
+	when(mq.getAt(1)).thenReturn("i");
+	assertTrue(c.countNumberOfOccurrences("i")>=0);
+  }
 
 
 }
