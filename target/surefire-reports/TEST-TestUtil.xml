@@ -65,7 +65,7 @@
   <testcase classname="TestUtil" name="example" time="0.001"/>
   <testcase classname="TestUtil" name="test1" time="0.001"/>
   <testcase classname="TestUtil" name="test2" time="0"/>
-  <testcase classname="TestUtil" name="test3" time="0.001"/>
-  <testcase classname="TestUtil" name="test4" time="0"/>
-  <testcase classname="TestUtil" name="test5" time="0.002"/>
+  <testcase classname="TestUtil" name="test3" time="0"/>
+  <testcase classname="TestUtil" name="test4" time="0.003"/>
+  <testcase classname="TestUtil" name="test5" time="0"/>
 </testsuite>
