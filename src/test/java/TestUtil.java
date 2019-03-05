@@ -45,4 +45,17 @@ public class TestUtil {
 
 
 
+  //if (sum % i == 0) 
+  //    return true;
+  @Test
+  public void test4() {
+	int arr2[] = {2,3,1};
+  	assertTrue(c.compute(arr2));
+   }
+
+
+
+
+
+
 }
