@@ -41,7 +41,7 @@ public class TestCompute {
 
   // for (int i = 0; i < mq.size(); i++) {
   @Test
-  public void test4(){
+  public void test3(){
     MessageQueue mq = mock(MessageQueue.class);
     c = new Compute(mq);
     when(mq.size()).thenReturn(5);
